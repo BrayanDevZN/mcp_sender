@@ -17,7 +17,7 @@ jobs:
 
         env:
             email: ${{ secrets.EMAIL }}
-            password: ${{ secrets. PASSWORD }}
+            password: ${{ secrets.PASSWORD }}
             origin: "*"
             rate_limit: 20
             global_rate_limit: 200
@@ -29,6 +29,16 @@ jobs:
             - uses: actions/setup-python@v5
               with:
                 python-version: "3.14"
+
+            - name: create .env
+              run: |
+                cat <<EOF > .env
+                email=$email
+                password=$password
+                origin=$origin
+                rate_limit=$rate_limit
+                global_rate_limit=$global_rate_limit
+                EOF
 
             - name: init docker
               run: docker compose -f sender-alpine.yml up  --build 
