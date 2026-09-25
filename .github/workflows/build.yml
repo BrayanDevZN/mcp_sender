@@ -4,10 +4,12 @@ on:
     push:
         branches:
             - main
+            - develop-v1
+
     pull_request:
         branches:
             - main
-            - develop-v1
+            
 
 jobs:
     app:
