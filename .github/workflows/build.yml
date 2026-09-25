@@ -39,7 +39,7 @@ jobs:
                 EOF
 
             - name: init docker
-              run: docker compose -f sender-alpine.yml up -d --build 
+              run: docker compose -f sender-alpine.yml up  --build 
            
                         
             - name: install requests
