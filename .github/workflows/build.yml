@@ -30,14 +30,6 @@ jobs:
               with:
                 python-version: "3.14"
 
-            - name: create .env
-              run: |
-                cat <<EOF > .env
-                EMAIL_USER=${{ secrets.EMAIL_USER }}
-                EMAIL_PASSWORD=${{ secrets.EMAIL_PASSWORD }}
-                JWT_SECRET=${{ secrets.JWT_SECRET }}
-                EOF
-
             - name: init docker
               run: docker compose -f sender-alpine.yml up  --build 
            
