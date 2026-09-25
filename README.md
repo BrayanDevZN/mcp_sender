@@ -1,36 +1,48 @@
 <h1 align="center">📬 MCP Sender</h1>
 
 <p align="center">
-  <img src="assets/mcp-sender.png" alt="MCP Sender" width="300">
-</p>
-
-
-<p align="center">
-  <strong>Microsserviço assíncrono de envio de e-mails, orquestrado com Kafka, Redis e FastAPI.</strong>
+  <img src="assets/mcp-sender.png" alt="Logo do MCP Sender" width="300">
 </p>
 
 <p align="center">
-  <img alt="Python" src="https://img.shields.io/badge/Python-3.14-3776AB?style=for-the-badge&logo=python&logoColor=yellow">
-  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-0.141.1-009688?style=for-the-badge&logo=fastapi&logoColor=cian-white">
-  <img alt="Apache Kafka" src="https://img.shields.io/badge/Apache%20Kafka-4.3.1-231F20?style=for-the-badge&logo=apachekafka&logoColor=white">
-  <img alt="Redis" src="https://img.shields.io/badge/Redis-Alpine-DC382D?style=for-the-badge&logo=redis&logoColor=white-red">
-  <img alt="Docker" src="https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=blue-white">
+  <strong>Serviço assíncrono e distribuído para envio de e-mails com FastAPI, Kafka, Celery e Redis.</strong>
 </p>
 
 <p align="center">
-  <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/brayandevzn/mcp_sender/build.yml?branch=main&style=flat-square&label=build">
-  <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/brayandevzn/mcp_sender?style=flat-square&logo=docker&logoColor=white">
-  <img alt="Made with FastAPI" src="https://img.shields.io/badge/API-REST-blueviolet?style=flat-square">
-  <img alt="Status" src="https://img.shields.io/badge/status-ativo-success?style=flat-square">
+  <a href="https://www.python.org/"><img alt="Python 3.14" src="https://img.shields.io/badge/Python-3.14-3776AB?style=for-the-badge&logo=python&logoColor=yellow"></a>
+  <a href="https://fastapi.tiangolo.com/"><img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-0.141.1-009688?style=for-the-badge&logo=fastapi&logoColor=cian"></a>
+  <a href="https://kafka.apache.org/"><img alt="Apache Kafka" src="https://img.shields.io/badge/Apache%20Kafka-4.3.1-231F20?style=for-the-badge&logo=apachekafka&logoColor=white"></a>
+  <a href="https://docs.celeryq.dev/en/stable/"><img alt="Celery 5.6.3" src="https://img.shields.io/badge/Celery-5.6.3-37814A?style=for-the-badge&logo=celery&logoColor=green"></a>
+  <a href="https://redis.io/"><img alt="Redis" src="https://img.shields.io/badge/Redis-Alpine-DC382D?style=for-the-badge&logo=redis&logoColor=red"></a>
+  <a href="https://www.docker.com/"><img alt="Docker Compose" src="https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=blue-white"></a>
+</p>
+
+<p align="center">
+  <a href="https://git-scm.com/"><img alt="Git" src="https://img.shields.io/badge/Git-versionamento-F05032?style=flat-square&logo=git&logoColor=white"></a>
+  <a href="https://github.com/BrayanDevZN/mcp_sender"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-repositório-181717?style=flat-square&logo=github&logoColor=white"></a>
+  <a href="https://github.com/BrayanDevZN/mcp_sender/actions/workflows/build.yml"><img alt="CI/CD" src="https://img.shields.io/github/actions/workflow/status/BrayanDevZN/mcp_sender/build.yml?style=flat-square&logo=githubactions&logoColor=white&label=CI%2FCD"></a>
+  <a href="https://github.com/BrayanDevZN/mcp_sender/stargazers"><img alt="GitHub Stars" src="https://img.shields.io/github/stars/BrayanDevZN/mcp_sender?style=flat-square&logo=github"></a>
+  <a href="https://github.com/BrayanDevZN/mcp_sender/forks"><img alt="GitHub Forks" src="https://img.shields.io/github/forks/BrayanDevZN/mcp_sender?style=flat-square&logo=github"></a>
+  <a href="https://github.com/BrayanDevZN/mcp_sender/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/BrayanDevZN/mcp_sender?style=flat-square&logo=github"></a>
+  <a href="https://docs.celeryq.dev/en/stable/"><img alt="Celery Task Queue" src="https://img.shields.io/badge/task%20queue-Celery-37814A?style=flat-square&logo=celery&logoColor=white"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/BrayanDevZN/mcp_sender/commits"><img alt="Último commit" src="https://img.shields.io/github/last-commit/BrayanDevZN/mcp_sender?style=flat-square&logo=git"></a>
+  <a href="https://github.com/BrayanDevZN/mcp_sender"><img alt="Linguagem principal" src="https://img.shields.io/github/languages/top/BrayanDevZN/mcp_sender?style=flat-square&logo=python&logoColor=white"></a>
+  <a href="https://github.com/BrayanDevZN/mcp_sender"><img alt="Tamanho do repositório" src="https://img.shields.io/github/repo-size/BrayanDevZN/mcp_sender?style=flat-square&logo=github"></a>
+  <a href="https://hub.docker.com/r/brayandevzn/mcp_sender"><img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/brayandevzn/mcp_sender?style=flat-square&logo=docker&logoColor=white"></a>
+  <a href="LICENSE"><img alt="Licença MIT" src="https://img.shields.io/badge/licença-MIT-yellow?style=flat-square"></a>
+  <img alt="Status ativo" src="https://img.shields.io/badge/status-ativo-2EA44F?style=flat-square">
 </p>
 
 <p align="center">
   <a href="#-sobre-o-projeto">Sobre</a> •
-  <a href="#-funcionalidades">Funcionalidades</a> •
-  <a href="#️-arquitetura">Arquitetura</a> •
-  <a href="#-stack-tecnológica">Stack</a> •
+  <a href="#-versões">Versões</a> •
+  <a href="#arquitetura-alpine">Arquitetura Alpine</a> •
+  <a href="#arquitetura-v1">Arquitetura v1</a> •
   <a href="#-instalação-e-execução">Instalação</a> •
-  <a href="#-uso-da-api">Uso da API</a> •
+  <a href="#-uso-da-api">API</a> •
   <a href="#-testes">Testes</a> •
   <a href="#-cicd">CI/CD</a>
 </p>
@@ -39,128 +51,343 @@
 
 ## 📖 Sobre o projeto
 
-**MCP Sender** é um serviço de envio de e-mails desacoplado e escalável, construído em torno de uma arquitetura orientada a eventos. Em vez de enviar o e-mail de forma síncrona dentro da própria requisição HTTP, a API apenas **publica a intenção de envio em um tópico Kafka** e devolve uma resposta imediata ao cliente. Um **worker consumidor**, rodando de forma independente, processa essas mensagens em segundo plano e realiza o envio real via SMTP (Gmail), com retentativas automáticas em caso de falha.
+O **MCP Sender** é um microsserviço de envio de e-mails projetado com arquitetura orientada a eventos. A API recebe a solicitação, valida os dados, aplica o controle de requisições e publica a mensagem no Apache Kafka. O processamento ocorre em segundo plano, mantendo a API responsiva e separando o recebimento da execução do envio.
 
-Esse desenho resolve, de forma elegante, os principais problemas de serviços de envio de e-mail tradicionais:
+O projeto possui duas versões funcionais que representam etapas da evolução da arquitetura:
 
-- A API nunca fica bloqueada esperando o SMTP responder;
-- Picos de tráfego são absorvidos pelo Kafka sem derrubar o serviço;
-- O worker pode escalar horizontalmente, processando o tópico `emails` em paralelo (5 partições);
-- Um **rate limiter distribuído em Redis** protege tanto o serviço quanto a conta de e-mail remetente contra abuso.
+- **Versão Alpine:** processamento assíncrono com FastAPI, Kafka, Redis e um consumer dedicado;
+- **Versão v1:** adiciona Celery e workers concorrentes para distribuir as tarefas de envio após o consumo das mensagens do Kafka.
 
-Todo o ambiente — API, worker, broker Kafka e Redis — é 100% containerizado com Docker Compose, com imagens já publicadas no Docker Hub (`brayandevzn/mcp_sender`), permitindo subir a stack completa com um único comando.
-
----
+Toda a infraestrutura é containerizada e pode ser iniciada pelo Docker Compose usando imagens publicadas no Docker Hub.
 
 ## ✨ Funcionalidades
 
-- 🚀 **API REST assíncrona** construída com FastAPI para disparo de e-mails.
-- 📨 **Fila de mensageria com Apache Kafka**, desacoplando recebimento e envio.
-- 🔁 **Worker consumidor dedicado**, com commit manual de offset e reprocessamento seguro.
-- 🛡️ **Rate limiting em duas camadas** (por IP e global), com contadores atômicos em Redis (`WATCH`/`MULTI`/`EXEC`).
-- ✉️ **Envio via Gmail/SMTP** com [`yagmail`](https://github.com/kootenpv/yagmail), com lógica de retentativa automática.
-- ✅ **Validação de payload** com Pydantic (exige e-mails `@gmail.com`).
-- 🌐 **CORS configurável** via variável de ambiente.
-- 📝 **Logging estruturado**, com saída simultânea para console e arquivo (`src/logs/app.log`).
-- 🐳 **Multi-stage Docker** com imagens dedicadas para API, worker, base e broker Kafka.
-- 🤖 **Pipeline de CI** no GitHub Actions, subindo a stack e rodando testes de ponta a ponta a cada push/PR.
+- API REST construída com **FastAPI**;
+- validação de payload com **Pydantic**;
+- publicação assíncrona de mensagens no **Apache Kafka**;
+- tópico `emails` configurado com cinco partições;
+- producer Kafka idempotente com `acks=all`;
+- controle de requisições por IP e global com **Redis**;
+- processamento em segundo plano por consumer dedicado;
+- distribuição de tarefas com **Celery** na versão v1;
+- execução concorrente com quatro processos de worker na versão v1;
+- envio via Gmail/SMTP com **yagmail**;
+- retentativas automáticas no serviço de envio;
+- CORS configurável por variável de ambiente;
+- logs no console e em arquivo;
+- imagens Docker dedicadas para os componentes da aplicação;
+- pipeline automatizado com **GitHub Actions**.
 
 ---
 
-## 🏗️ Arquitetura
+## 🧭 Versões
 
-O fluxo de uma mensagem, do disparo até a caixa de entrada do destinatário, segue o caminho abaixo:
+### Versão Alpine
+
+A versão Alpine processa o envio diretamente no consumer. Depois de receber a mensagem do Kafka, o consumer executa o serviço responsável pela comunicação SMTP.
+
+```text
+API → Kafka → Consumer → SMTP → Destinatário
+```
+
+Use esta versão para executar o fluxo direto baseado em Kafka:
+
+```bash
+docker compose -f sender-alpine.yml up -d
+```
+
+Imagens utilizadas:
+
+- `brayandevzn/mcp_sender:base-alpine`
+- `brayandevzn/mcp_sender:kafka-alpine`
+- `brayandevzn/mcp_sender:api-alpine`
+- `brayandevzn/mcp_sender:consumer-alpine`
+
+### Versão v1 — mais recente
+
+A **v1 é a versão mais recente** do MCP Sender. Ela inclui uma camada de tarefas distribuídas: o consumer do Kafka cria uma tarefa no Celery, e um dos quatro workers concorrentes recebe essa tarefa pelo Redis e realiza o envio.
+
+```text
+API → Kafka → Consumer → Celery/Redis → Worker → SMTP → Destinatário
+```
+
+Use esta versão para executar a arquitetura com Celery:
+
+```bash
+docker compose -f sender-v1.yml up -d
+```
+
+Imagens utilizadas:
+
+- `brayandevzn/mcp_sender:base-v1`
+- `brayandevzn/mcp_sender:kafka-v1`
+- `brayandevzn/mcp_sender:api-v1`
+- `brayandevzn/mcp_sender:consumer-v1`
+- `brayandevzn/mcp_server:worker-v1`
+
+### Comparação entre as versões
+
+| Recurso | Versão Alpine | Versão v1 |
+|---|:---:|:---:|
+| FastAPI | ✅ | ✅ |
+| Apache Kafka | ✅ | ✅ |
+| Redis para rate limit | ✅ | ✅ |
+| Consumer Kafka | ✅ | ✅ |
+| Envio SMTP | Direto pelo consumer | Executado pelo worker |
+| Celery | — | ✅ |
+| Redis para tarefas | — | ✅ |
+| Workers concorrentes | — | ✅, 4 workers |
+| Compose com imagens publicadas | `sender-alpine.yml` | `sender-v1.yml` |
+
+---
+
+<a id="arquitetura-alpine"></a>
+
+## 🏗️ Arquitetura da versão Alpine
+
+A versão Alpine utiliza o Kafka como núcleo do processamento assíncrono. A API recebe a solicitação e publica uma mensagem; o consumer processa essa mensagem e executa diretamente o envio SMTP. O Redis é usado pelo middleware de rate limit.
+
+### Componentes da versão Alpine
+
+| Componente | Responsabilidade |
+|---|---|
+| **Cliente** | Envia a requisição HTTP com destinatário, assunto e conteúdo. |
+| **FastAPI** | Valida o payload, aplica o middleware e responde ao cliente. |
+| **Redis** | Mantém os contadores de requisições por IP e o contador global. |
+| **Kafka Producer** | Gera o UUID e publica a mensagem no tópico `emails`. |
+| **Apache Kafka** | Armazena e distribui as mensagens entre as cinco partições do tópico. |
+| **Kafka Consumer** | Lê as mensagens e coordena a execução do serviço de envio. |
+| **Sender** | Autentica no Gmail e envia o e-mail por SMTP usando `yagmail`. |
+
+### Diagrama da versão Alpine
 
 ```mermaid
 flowchart LR
-    Client(["Cliente / App"]) -->|"POST /sender"| API["API · FastAPI"]
-    API <-->|"rate limit\n(IP + global)"| Redis[("Redis")]
-    API -->|"publica no tópico\n'emails'"| Kafka[("Kafka\n(5 partições)")]
-    Kafka --> Consumer["Consumer\n(worker)"]
-    Consumer -->|"SMTP · yagmail"| Gmail["Gmail"]
-    Gmail --> Dest(["📧 Destinatário"])
+    Client([Cliente]) -->|POST /sender/| API[FastAPI]
+    API <-->|Consulta e incrementa| Redis[(Redis Rate Limit)]
+    API -->|Publica mensagem| Kafka[(Kafka: tópico emails)]
+    Kafka -->|Entrega mensagem| Consumer[Kafka Consumer]
+    Consumer -->|Executa diretamente| Sender[Sender]
+    Sender -->|SMTP| Gmail[Gmail]
+    Gmail --> Recipient([Destinatário])
 
     style API fill:#009688,color:#fff
     style Kafka fill:#231F20,color:#fff
     style Redis fill:#DC382D,color:#fff
     style Consumer fill:#3776AB,color:#fff
+    style Sender fill:#6D28D9,color:#fff
 ```
 
-**Passo a passo:**
+### Fluxo da versão Alpine
 
-1. O cliente envia um `POST /sender` com `email`, `subject` e `body`.
-2. O middleware consulta o Redis e verifica o limite de requisições por IP e o limite global; se excedido, retorna `429 Too Many Requests`.
-3. O `Producer` publica a mensagem no tópico Kafka `emails` (chave = UUID único, `acks=all`, `enable_idempotence=True`).
-4. A API responde imediatamente com `201 Created` e o `id` da mensagem — o envio acontece de forma assíncrona.
-5. O serviço `consumer` faz *polling* contínuo do tópico, processa cada mensagem e chama o `Sender`.
-6. O `Sender` autentica no Gmail via `yagmail` e envia o e-mail; em caso de erro, há até 3 retentativas automáticas.
-7. O offset da mensagem só é commitado no Kafka após o processamento, garantindo *at-least-once delivery*.
+1. O cliente envia `email`, `subject` e `body` para `POST /sender/`.
+2. O middleware consulta no Redis os limites por IP e global.
+3. A API valida os dados recebidos com o Pydantic.
+4. O producer cria um UUID e publica a mensagem no tópico `emails`.
+5. A API devolve `201 Created` com o identificador da mensagem.
+6. O consumer recebe a mensagem de uma das partições do Kafka.
+7. O consumer chama o `Sender`, que realiza o envio pelo Gmail/SMTP.
+8. Depois do processamento, o consumer confirma o offset da mensagem.
+
+### Estrutura de pastas da versão Alpine
+
+```text
+mcp_sender/
+├── .github/
+│   └── workflows/
+│       └── build.yml             # Pipeline do GitHub Actions
+├── assets/
+│   └── mcp-sender.png            # Imagem do projeto
+├── src/
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── manage.py         # Configuração do FastAPI
+│   │   │   ├── midlleware.py     # Rate limit da API
+│   │   │   ├── router.py         # Endpoint de envio
+│   │   │   └── schema.py         # Validação do payload
+│   │   ├── server/
+│   │   │   ├── broker.py         # Conexão administrativa com o Kafka
+│   │   │   ├── consumer.py       # Consumer do tópico emails
+│   │   │   ├── manage.py         # Processamento das mensagens
+│   │   │   ├── producer.py       # Publicação no Kafka
+│   │   │   └── topic.py          # Criação do tópico
+│   │   └── main.py               # Entrada da API e do consumer
+│   ├── cache/                    # Conexão e controle do Redis
+│   ├── logs/                     # Configuração de logs
+│   ├── config.py                 # Variáveis de ambiente
+│   ├── sender.py                 # Envio via Gmail/SMTP
+│   └── service.py                # Serviço de envio direto
+├── tests/
+│   └── app.py                    # Teste de integração
+├── Dockerfile.api                # Container da API
+├── Dockerfile.base               # Imagem base Python
+├── Dockerfile.consumer           # Container do consumer
+├── Dockerfile.kafka              # Broker Kafka em modo KRaft
+├── compose.yml                   # Build local da stack
+├── sender-alpine.yml             # Stack com imagens Alpine publicadas
+├── LICENSE                       # Licença MIT e atribuição
+└── requirements.txt              # Dependências Python
+```
+
+---
+
+<a id="arquitetura-v1"></a>
+
+## ⚙️ Arquitetura da versão v1
+
+A versão v1 preserva a entrada HTTP, o rate limit e a mensageria Kafka, mas separa o consumo da execução do envio. O consumer transforma cada mensagem do Kafka em uma tarefa Celery. Essa tarefa é armazenada em um Redis dedicado e distribuída entre quatro workers concorrentes.
+
+### Componentes da versão v1
+
+| Componente | Responsabilidade |
+|---|---|
+| **Cliente** | Envia a solicitação de e-mail para a API. |
+| **FastAPI** | Valida a requisição e publica os dados para processamento assíncrono. |
+| **Redis Rate Limit** | Controla os limites por IP e global da API. |
+| **Kafka Producer** | Publica a mensagem com uma chave UUID no tópico `emails`. |
+| **Apache Kafka** | Desacopla a API da etapa responsável por criar a tarefa. |
+| **Kafka Consumer** | Consome a mensagem e chama `sender_task`. |
+| **Celery** | Registra e distribui a tarefa `sender` para execução assíncrona. |
+| **Redis Worker** | Atua como broker na base `0` e backend na base `1` do Celery. |
+| **Celery Workers** | Quatro workers concorrentes recebem e executam as tarefas de envio. |
+| **Sender** | Envia a mensagem ao destinatário usando Gmail/SMTP. |
+
+### Diagrama da versão v1
+
+```mermaid
+flowchart LR
+    Client([Cliente]) -->|POST /sender/| API[FastAPI]
+    API <-->|Consulta e incrementa| RateRedis[(Redis Rate Limit)]
+    API -->|Publica mensagem| Kafka[(Kafka: tópico emails)]
+    Kafka -->|Entrega mensagem| Consumer[Kafka Consumer]
+    Consumer -->|sender.delay| Broker[(Redis Worker)]
+    Broker -->|Disponibiliza tarefa| Queue[Celery Task Queue]
+
+    subgraph Pool[Pool Celery - concorrência 4]
+        direction TB
+        Worker1[Worker 1]
+        Worker2[Worker 2]
+        Worker3[Worker 3]
+        Worker4[Worker 4]
+    end
+
+    Queue -->|Distribui| Worker1
+    Queue -->|Distribui| Worker2
+    Queue -->|Distribui| Worker3
+    Queue -->|Distribui| Worker4
+
+    Worker1 -->|Executa sender| SMTP[Sender / SMTP]
+    Worker2 -->|Executa sender| SMTP
+    Worker3 -->|Executa sender| SMTP
+    Worker4 -->|Executa sender| SMTP
+
+    SMTP --> Gmail[Gmail]
+    Gmail --> Recipient([Destinatário])
+
+    style API fill:#009688,color:#fff
+    style Kafka fill:#231F20,color:#fff
+    style RateRedis fill:#DC382D,color:#fff
+    style Broker fill:#DC382D,color:#fff
+    style Consumer fill:#3776AB,color:#fff
+    style Queue fill:#37814A,color:#fff
+    style Worker1 fill:#37814A,color:#fff
+    style Worker2 fill:#37814A,color:#fff
+    style Worker3 fill:#37814A,color:#fff
+    style Worker4 fill:#37814A,color:#fff
+    style SMTP fill:#6D28D9,color:#fff
+```
+
+### Fluxo da versão v1
+
+1. O cliente envia os dados para `POST /sender/`.
+2. O Redis de rate limit valida os contadores da requisição.
+3. A API valida o payload e publica a mensagem no Kafka.
+4. O cliente recebe `201 Created` com o UUID da mensagem.
+5. O Kafka Consumer lê a mensagem do tópico `emails`.
+6. O consumer chama `sender_task`, que publica a tarefa com `sender.delay(...)`.
+7. O Redis Worker recebe a tarefa e a disponibiliza na fila do Celery.
+8. O Celery distribui cada tarefa disponível para um dos quatro workers concorrentes.
+9. O worker selecionado executa a tarefa `sender` de forma independente dos demais.
+10. O `Sender` autentica no Gmail e entrega o e-mail via SMTP.
+
+### Separação dos serviços Redis na v1
+
+| Serviço | Uso |
+|---|---|
+| `redis` | Rate limiting da API. |
+| `redis-worker` | Broker e armazenamento de resultados das tarefas Celery. |
+
+### Estrutura de pastas da versão v1
+
+```text
+mcp_sender/
+├── .github/
+│   └── workflows/
+│       └── build.yml             # Pipeline do GitHub Actions
+├── assets/
+│   └── mcp-sender.png            # Imagem do projeto
+├── src/
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── manage.py         # Configuração do FastAPI
+│   │   │   ├── midlleware.py     # Rate limit da API
+│   │   │   ├── router.py         # Endpoint de envio
+│   │   │   └── schema.py         # Validação do payload
+│   │   ├── server/
+│   │   │   ├── broker.py         # Conexão administrativa com o Kafka
+│   │   │   ├── consumer.py       # Consumer do tópico emails
+│   │   │   ├── manage.py         # Criação das tarefas Celery
+│   │   │   ├── producer.py       # Publicação no Kafka
+│   │   │   └── topic.py          # Criação do tópico
+│   │   └── main.py               # Entrada da API e do consumer
+│   ├── cache/                    # Redis usado pelo rate limit
+│   ├── logs/                     # Configuração de logs
+│   ├── tasks/
+│   │   ├── connect.py            # Conexão do Celery com o Redis Worker
+│   │   └── manage.py             # Instância e descoberta de tarefas
+│   ├── config.py                 # Variáveis de ambiente
+│   ├── sender.py                 # Envio via Gmail/SMTP
+│   └── service.py                # Definição da tarefa sender
+├── tests/
+│   └── app.py                    # Teste de integração
+├── Dockerfile.api                # Container da API
+├── Dockerfile.base               # Imagem base Python
+├── Dockerfile.consumer           # Container do consumer Kafka
+├── Dockerfile.kafka              # Broker Kafka em modo KRaft
+├── Dockerfile.worker             # Pool Celery com quatro workers concorrentes
+├── compose.yml                   # Build local da stack v1
+├── sender-v1.yml                 # Stack v1 com imagens publicadas
+├── LICENSE                       # Licença MIT e atribuição
+└── requirements.txt              # Dependências, incluindo Celery
+```
 
 ---
 
 ## 🧱 Stack tecnológica
 
-| Camada              | Tecnologia                                            |
-|---------------------|--------------------------------------------------------|
-| Linguagem           | Python 3.14                                            |
-| Framework Web       | FastAPI + Uvicorn                                       |
-| Mensageria          | Apache Kafka 4.3.1 (`kafka-python`)                     |
-| Cache / Rate limit  | Redis (Alpine)                                          |
-| Envio de e-mail     | yagmail (SMTP/Gmail) + premailer                        |
-| Validação de dados  | Pydantic v2                                             |
-| Containers          | Docker & Docker Compose (imagens Alpine)                |
-| CI/CD               | GitHub Actions                                          |
-| Logging             | módulo `logging` nativo do Python                       |
-
----
-
-## 📂 Estrutura do projeto
-
-```
-mcp_sender/
-├── assets/
-│   └── mcp-sender.png          # Logo do projeto
-├── src/
-│   ├── app/
-│   │   ├── api/
-│   │   │   ├── manage.py       # Monta a instância do FastAPI (rotas, CORS, middleware)
-│   │   │   ├── midlleware.py   # Middleware de rate limiting
-│   │   │   ├── router.py       # Rota POST /sender
-│   │   │   └── schema.py       # Schema Pydantic de validação
-│   │   ├── server/
-│   │   │   ├── broker.py       # Conexão/health-check com o Kafka
-│   │   │   ├── consumer.py     # Configuração do KafkaConsumer
-│   │   │   ├── manage.py       # Orquestra o worker (topic + consumer + loop)
-│   │   │   ├── producer.py     # Publica mensagens no tópico "emails"
-│   │   │   └── topic.py        # Criação idempotente do tópico Kafka
-│   │   └── main.py             # Entry-point: sobe a API ou o consumer (via arg CLI)
-│   ├── cache/
-│   │   ├── connect.py          # Conexão com Redis
-│   │   ├── control.py          # Operações atômicas de incremento/leitura
-│   │   └── manage.py           # Instância compartilhada do controlador Redis
-│   ├── logs/
-│   │   └── log.py              # Configuração global de logging
-│   ├── config.py                # Carrega e valida as variáveis de ambiente
-│   └── sender.py                 # Lógica de envio via yagmail
-├── tests/
-│   └── app.py                    # Teste de ponta a ponta da rota /sender
-├── Dockerfile.base                # Imagem base (dependências + código)
-├── Dockerfile.api                 # Imagem da API (uvicorn)
-├── Dockerfile.consumer             # Imagem do worker consumidor
-├── Dockerfile.kafka                # Imagem do broker Kafka (KRaft mode)
-├── compose.yml                     # Stack completa, com build local das imagens
-├── sender-alpine.yml                # Stack completa, usando imagens já publicadas
-├── requirements.txt                  # Dependências Python
-└── .github/workflows/build.yml       # Pipeline de CI
-```
+| Camada | Tecnologia | Responsabilidade |
+|---|---|---|
+| Linguagem | Python 3.14 | Implementação dos serviços |
+| API | FastAPI + Uvicorn | Entrada HTTP e documentação OpenAPI |
+| Validação | Pydantic v2 | Validação do corpo das requisições |
+| Mensageria | Apache Kafka 4.3.1 | Transporte e armazenamento dos eventos |
+| Tarefas distribuídas | Celery 5.6.3 | Distribuição do processamento na v1 |
+| Cache | Redis Alpine | Contadores do rate limit |
+| Broker de tarefas | Redis Alpine | Broker e backend do Celery na v1 |
+| E-mail | yagmail | Comunicação SMTP com o Gmail |
+| Containers | Docker Compose | Execução coordenada da infraestrutura |
+| Automação | GitHub Actions | Build e teste de integração |
 
 ---
 
 ## ⚙️ Pré-requisitos
 
-- [Docker](https://www.docker.com/) e [Docker Compose](https://docs.docker.com/compose/) instalados;
-- Uma conta Gmail com [senha de app](https://support.google.com/accounts/answer/185833) gerada (não use a senha normal da conta);
-- Python 3.14+ apenas se for rodar os testes localmente fora do container.
+- [Git](https://git-scm.com/);
+- [Docker](https://www.docker.com/);
+- [Docker Compose](https://docs.docker.com/compose/);
+- conta Gmail com uma [senha de app](https://support.google.com/accounts/answer/185833).
+
+Python 3.14+ é necessário apenas para executar os testes diretamente no ambiente local.
 
 ---
 
@@ -169,68 +396,117 @@ mcp_sender/
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/brayandevzn/mcp_sender.git
+git clone https://github.com/BrayanDevZN/mcp_sender.git
 cd mcp_sender
 ```
 
-### 2. Configure as variáveis de ambiente
+### 2. Configure o ambiente
 
-Crie um arquivo `.env` na raiz do projeto com as chaves abaixo:
+Crie um arquivo `.env` na raiz:
 
 ```env
+# Conta utilizada como remetente
 email=seuemail@gmail.com
-password=sua_senha_de_app_do_gmail
+
+# Senha de app gerada na Conta Google para uso pelo yagmail
+password=abcdabcdabcdabcd
+
+# Origem aceita pelo CORS
 origin=*
+
+# Limites de requisições dentro da janela de 60 segundos
 rate_limit=50
 global_rate_limit=200
 ```
 
-| Variável             | Descrição                                                              |
-|----------------------|--------------------------------------------------------------------------|
-| `email`              | Conta Gmail usada como remetente dos e-mails                             |
-| `password`           | Senha de app do Gmail (App Password), usada pelo `yagmail`               |
-| `origin`             | Origem permitida pelo CORS da API (ex: `*` ou `https://meusite.com`)     |
-| `rate_limit`         | Limite de requisições por IP dentro da janela de 60s                    |
-| `global_rate_limit`  | Limite total de requisições aceitas pela API dentro da janela de 60s    |
+| Variável | Descrição | Exemplo |
+|---|---|---|
+| `email` | Conta Gmail remetente | `conta@gmail.com` |
+| `password` | Senha de app gerada na Conta Google e utilizada pelo `yagmail` | `abcdabcdabcdabcd` |
+| `origin` | Origem autorizada pelo CORS | `*` |
+| `rate_limit` | Requisições permitidas por IP em 60 segundos | `50` |
+| `global_rate_limit` | Requisições globais permitidas em 60 segundos | `200` |
 
-> 🔒 **Boa prática:** o `.env` já está no `.gitignore` — mantenha suas credenciais fora do controle de versão e use sempre uma senha de app dedicada, nunca a senha principal da conta Google.
+> **Importante:** `password` não é a senha normal usada para entrar no Gmail. É uma **senha de app**, gerada no gerenciamento de segurança da Conta Google para que o `yagmail` possa autenticar no SMTP.
 
-### 3. Suba a stack
+### Como obter a senha usada pelo yagmail
 
-Você tem duas formas de rodar o projeto:
+1. Ative a verificação em duas etapas na Conta Google do remetente.
+2. Abra o [Gerenciador de Senhas de app da Conta Google](https://myaccount.google.com/apppasswords).
+3. Crie uma senha de app para o MCP Sender.
+4. Copie a credencial gerada e informe seu valor em `password` no `.env`.
 
-**Opção A — build local das imagens** (ideal para desenvolvimento, usa `compose.yml`):
+Exemplo completo:
 
-```bash
-docker compose -f compose.yml up -d --build
+```env
+email=mcp.sender@gmail.com
+password=abcdefghijklmnop
+origin=http://localhost:3000
+rate_limit=50
+global_rate_limit=200
 ```
 
-**Opção B — usando as imagens já publicadas no Docker Hub** (mais rápido, usa `sender-alpine.yml`):
+O `yagmail` utiliza essa credencial exclusivamente para autenticar o envio SMTP. O arquivo `.env` está no `.gitignore` e não deve ser enviado ao repositório.
+
+### 3. Escolha e inicie a versão
+
+Para usar a **v1**, versão mais recente, execute o Compose `sender-v1.yml`:
+
+```bash
+docker compose -f sender-v1.yml up -d
+```
+
+Para usar a versão **Alpine**, execute o Compose `sender-alpine.yml`:
 
 ```bash
 docker compose -f sender-alpine.yml up -d
 ```
 
-Ambas sobem os quatro serviços da stack:
+Cada arquivo Compose utiliza automaticamente as imagens e os serviços correspondentes. Basta escolher o arquivo da versão desejada.
 
-| Serviço    | Descrição                                          | Porta        |
-|------------|-----------------------------------------------------|--------------|
-| `kafka`    | Broker Kafka em modo KRaft (sem Zookeeper)          | interna      |
-| `redis`    | Armazena os contadores de rate limit                | `6379`       |
-| `consumer` | Worker que consome o tópico `emails` e envia os e-mails | interna  |
-| `api`      | API REST FastAPI                                    | `8000`       |
+### 4. Acompanhe a aplicação
 
-Após subir, a API estará disponível em **http://localhost:8000**.
+Versão v1:
+
+```bash
+docker compose -f sender-v1.yml ps
+docker compose -f sender-v1.yml logs -f
+```
+
+Versão Alpine:
+
+```bash
+docker compose -f sender-alpine.yml ps
+docker compose -f sender-alpine.yml logs -f
+```
+
+A API estará disponível em [http://localhost:8000](http://localhost:8000).
+
+### 5. Encerre o ambiente
+
+Versão v1:
+
+```bash
+docker compose -f sender-v1.yml down
+```
+
+Versão Alpine:
+
+```bash
+docker compose -f sender-alpine.yml down
+```
 
 ---
 
 ## 📡 Uso da API
 
-### `POST /sender`
+As duas versões oferecem o mesmo contrato HTTP.
 
-Enfileira um e-mail para envio assíncrono.
+### `POST /sender/`
 
-**Request body:**
+Recebe os dados e enfileira o e-mail para processamento assíncrono.
+
+#### Corpo da requisição
 
 ```json
 {
@@ -240,21 +516,21 @@ Enfileira um e-mail para envio assíncrono.
 }
 ```
 
-> ℹ️ O schema exige que o campo `email` contenha `@gmail.com`.
+O campo `email` deve conter um endereço `@gmail.com`.
 
-**Exemplo com `curl`:**
+#### Exemplo com cURL
 
 ```bash
-curl -X POST http://localhost:8000/sender \
+curl -X POST http://localhost:8000/sender/ \
   -H "Content-Type: application/json" \
   -d '{
-        "email": "destinatario@gmail.com",
-        "subject": "Olá!",
-        "body": "Este é um e-mail de teste enviado pelo MCP Sender."
-      }'
+    "email": "destinatario@gmail.com",
+    "subject": "Olá!",
+    "body": "Mensagem enviada pelo MCP Sender."
+  }'
 ```
 
-**Resposta de sucesso — `201 Created`:**
+#### Resposta de sucesso — `201 Created`
 
 ```json
 {
@@ -263,62 +539,114 @@ curl -X POST http://localhost:8000/sender \
 }
 ```
 
-O campo `id` é o identificador único (UUID) da mensagem publicada no Kafka, útil para rastreamento/correlação em logs.
+O campo `id` contém o UUID usado como chave da mensagem no Kafka.
 
-**Resposta de erro — `429 Too Many Requests`:**
+### Códigos de resposta
 
-Retornada quando o limite por IP (`rate_limit`) ou o limite global (`global_rate_limit`) é excedido dentro da janela de 60 segundos.
+| Código | Descrição |
+|---:|---|
+| `201` | Mensagem recebida e publicada no Kafka |
+| `422` | Dados da requisição inválidos |
+| `429` | Limite de requisições atingido |
+| `501` | Erro ao publicar a mensagem |
 
-```json
-{
-  "detail": "Exceded rate limit for 192.168.1.10"
-}
-```
+### Documentação interativa
 
-**Resposta de erro — `501`:**
-
-Retornada em caso de falha inesperada ao publicar a mensagem no Kafka.
+- Swagger UI: [http://localhost:8000/docs](http://localhost:8000/docs)
+- ReDoc: [http://localhost:8000/redoc](http://localhost:8000/redoc)
 
 ---
 
 ## 🧪 Testes
 
-O projeto inclui um teste de ponta a ponta que dispara uma requisição real contra a API em execução:
+Com a stack escolhida em execução, instale o cliente HTTP e execute o teste de integração:
 
 ```bash
-pip install requests
+python -m pip install requests
 python -m tests.app
 ```
 
-O teste envia um e-mail de exemplo para a rota `/sender` e imprime no console o `id` retornado, validando o funcionamento completo da stack (API → Kafka → Consumer → Gmail).
+O teste envia uma requisição real à rota `/sender` e exibe o identificador retornado pela API, percorrendo o fluxo integrado da versão em execução.
 
 ---
 
 ## 🔄 CI/CD
 
-O workflow definido em [`.github/workflows/build.yml`](.github/workflows/build.yml) roda automaticamente em todo `push` e `pull request` para a branch `main`:
+O workflow [`.github/workflows/build.yml`](.github/workflows/build.yml) executa automaticamente a integração do projeto no GitHub Actions em pushes e Pull Requests.
 
-1. Faz checkout do código e configura Python 3.14;
-2. Sobe toda a stack com `docker compose -f sender-alpine.yml up -d --build`;
-3. Instala a dependência `requests`;
-4. Executa `python -m tests.app` como teste de integração ponta a ponta.
+O pipeline realiza as seguintes etapas:
 
-As credenciais (`email` e `password`) são injetadas via **GitHub Secrets** (`secrets.EMAIL` e `secrets.PASSWORD`), configurados no ambiente `develop` do repositório.
+1. obtém o código do repositório;
+2. configura o Python 3.14;
+3. cria o arquivo de ambiente com os GitHub Secrets;
+4. inicia a stack pelo Docker Compose;
+5. aguarda a inicialização dos serviços;
+6. instala o cliente de testes;
+7. executa o teste de integração.
+
+### Secrets do ambiente `develop`
+
+| Secret | Finalidade |
+|---|---|
+| `EMAIL` | Conta Gmail usada pelo serviço |
+| `PASSWORD` | Senha de app da conta remetente |
+
+O badge **CI/CD** no topo mostra o resultado mais recente do workflow.
+
+---
+
+## 🌿 Fluxo com Git e GitHub
+
+```bash
+git switch -c feature/minha-feature
+
+git add .
+git commit -m "feat: adiciona nova funcionalidade"
+git push -u origin feature/minha-feature
+```
+
+Depois do push, abra um Pull Request no GitHub descrevendo o objetivo, as alterações realizadas e a validação executada.
+
+### Convenção sugerida
+
+| Tipo | Uso |
+|---|---|
+| `feat` | Nova funcionalidade |
+| `fix` | Correção de comportamento |
+| `docs` | Documentação |
+| `test` | Testes |
+| `refactor` | Refatoração interna |
+| `ci` | Pipeline e automações |
+| `chore` | Manutenção geral |
 
 ---
 
 ## 🤝 Contribuindo
 
-Contribuições são bem-vindas! Para colaborar:
+1. Faça um fork do projeto.
+2. Crie uma branch de trabalho.
+3. Implemente e valide a alteração.
+4. Use commits objetivos e descritivos.
+5. Envie a branch para o GitHub.
+6. Abra um Pull Request.
 
-1. Faça um fork do projeto;
-2. Crie uma branch para sua feature (`git checkout -b feature/minha-feature`);
-3. Commit suas alterações (`git commit -m 'feat: minha nova feature'`);
-4. Envie um push para a branch (`git push origin feature/minha-feature`);
-5. Abra um Pull Request.
+---
+
+## 🔗 Links úteis
+
+- [Repositório no GitHub](https://github.com/BrayanDevZN/mcp_sender)
+- [Execuções do GitHub Actions](https://github.com/BrayanDevZN/mcp_sender/actions)
+- [Issues do projeto](https://github.com/BrayanDevZN/mcp_sender/issues)
+- [Imagens no Docker Hub](https://hub.docker.com/r/brayandevzn/mcp_sender)
+
+---
+
+## 📄 Licença
+
+Este projeto é distribuído sob a [Licença MIT](LICENSE). Você pode usar, copiar, modificar e distribuir o código, inclusive em projetos comerciais, desde que preserve o aviso de copyright e o texto da licença, mantendo o devido crédito ao autor.
 
 ---
 
 <p align="center">
-  Feito com 💙 usando FastAPI, Kafka e Redis.
+  Desenvolvido com 💙 usando FastAPI, Kafka, Celery, Redis e Docker.
 </p>
