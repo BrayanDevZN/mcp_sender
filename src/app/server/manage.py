@@ -5,7 +5,7 @@ Inicia todo server kafka e o consumer
 from src.app.server.broker import kafkaClient
 from src.app.server.topic import Topic
 from src.app.server.consumer import Consumer
-from src.service import sender
+from src.service import sender_task
 
 class KafkaServer:
     def __init__(self)-> None:
@@ -39,7 +39,7 @@ class KafkaServer:
                     try:
 
                         args = message.value
-                        await sender(**args)
+                        await sender_task(**args)
                       
                         self.consumer.commit()
 

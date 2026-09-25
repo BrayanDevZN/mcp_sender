@@ -16,7 +16,7 @@ class Sender:
         )
 
 
-    async def send(self,email:str, subject:str, body:str) -> None:
+    def send(self,email:str, subject:str, body:str) -> None:
 
         logger.info(f"Enviando email para {email}...")
 
