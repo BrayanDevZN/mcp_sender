@@ -40,8 +40,16 @@ jobs:
 
             - name: init docker
               run: docker compose -f sender-alpine.yml up -d --build --wait
+            - name: Docker debug
+              if: always()
+              run: |
+                echo "=== CONTAINERS ==="
+                docker compose -f sender-alpine.yml ps -a
 
-            
+                echo "=== CONSUMER LOGS ==="
+                docker compose -f sender-alpine.yml logs --no-color consumer
+
+                        
             - name: install requests
               run: pip install requests
 
