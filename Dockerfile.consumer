@@ -1,2 +1,2 @@
-FROM base:alpine AS base 
+FROM brayandevzn/mcp_sender:base-alpine AS base 
 CMD ["python", "-m", "src.app.main", "init_consumer"]

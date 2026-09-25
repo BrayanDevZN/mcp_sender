@@ -1,0 +1,47 @@
+name: app_sender
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    app:
+
+        runs-on: ubuntu-latest
+
+        environment: develop
+
+        env:
+            email: ${{ secrets.EMAIL }}
+            password: ${{ secrets. PASSWORD }}
+            origin: "*"
+            rate_limit: 20
+            global_rate_limit: 200
+
+        steps:
+
+            - uses: actions/checkout@v4
+
+            - uses: actions/setup-python@v5
+              with:
+                python-version: "3.14"
+
+            - name: init docker
+              run: docker compose -f sender-alpine.yml up -d --build
+
+            - name: install requests
+              run: pip install requests
+
+            - name: execute test
+              run: python -m tests.app
+            
+
+        
+
+
+        
+
