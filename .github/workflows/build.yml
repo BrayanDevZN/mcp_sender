@@ -41,7 +41,10 @@ jobs:
                 EOF
 
             - name: init docker
-              run: docker compose -f sender-alpine.yml up  -d --build --wait
+              run: docker compose -f sender-alpine.yml up  -d --build 
+
+            - name: wait
+              run: sleep 15
            
                         
             - name: install requests
