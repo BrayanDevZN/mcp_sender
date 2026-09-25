@@ -6,9 +6,10 @@ junta os modulos e facilita importação
 
 from src.config import ENVIRONMENTS
 from src.sender import Sender
+from src.tasks.manage import celery_app
 
-
-async def sender(email:str, subject:str, body:str) -> None:
+@celery_app.task
+def sender(email:str, subject:str, body:str) -> None:
 
     countdown = 0
 
@@ -18,7 +19,7 @@ async def sender(email:str, subject:str, body:str) -> None:
 
             instance = Sender(email=ENVIRONMENTS["email"], password=ENVIRONMENTS["password"])
 
-            await instance.send(
+            instance.send(
                 email=email,
                 subject=subject,
                 body=body
@@ -37,4 +38,20 @@ async def sender(email:str, subject:str, body:str) -> None:
             logger.error(e)
             raise Exception(msg)
 
-    
+
+async def sender_task(email:str, subject:str, body:str) -> None:
+
+    try:
+        logger.info("Criando task...")
+
+        args = locals()
+        sender.delay(**args)
+
+        logger.info("Criada com sucesso!!!")
+
+    except Exception as e:
+
+        logger.error(e)
+        raise Exception(e)
+
+        

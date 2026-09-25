@@ -5,7 +5,7 @@ x-configs: &app-env
 services:
   
   kafka:
-    image: brayandevzn/mcp_sender:kafka-alpine
+    image: brayandevzn/mcp_sender:kafka-v1
     container_name: kafka
     build:
       context: .
@@ -13,7 +13,7 @@ services:
 
     
   base:
-    image: brayandevzn/mcp_sender:base-alpine
+    image: brayandevzn/mcp_sender:base-v1
     <<: *app-env
     
   consumer:
@@ -23,7 +23,7 @@ services:
       context: .
       dockerfile: Dockerfile.consumer
 
-    image: brayandevzn/mcp_sender:consumer-alpine
+    image: brayandevzn/mcp_sender:consumer-v1
     depends_on:
     
       
@@ -31,6 +31,9 @@ services:
         condition: service_healthy
 
       base:
+        condition: service_started
+
+      redis-worker:
         condition: service_started
 
   redis:
@@ -41,7 +44,7 @@ services:
 
   api:
 
-    image: brayandevzn/mcp_sender:api-alpine
+    image: brayandevzn/mcp_sender:api-v1
     build:
       context: .
       dockerfile: Dockerfile.api
@@ -64,7 +67,29 @@ services:
 
       consumer:
         condition: service_started
-          
+
+      redis-worker:
+        condition: service_started
+
+  redis-worker:
+    container_name: redis-worker
+    image: redis:alpine
+
+  worker:
+    container_name: worker-sender
+    build:
+      context: .
+      dockerfile: Dockerfile.worker
+    image: brayandevzn/mcp_server:worker-v1
+    depends_on:
+      redis-worker:
+        condition: service_started
+      base:
+        condition: service_started
+      api:
+        condition: service_started
+    <<: *app-env
+    
 
       
 
