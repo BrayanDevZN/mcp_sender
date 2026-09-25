@@ -1,7 +1,7 @@
 
 def test_app() -> None:
 
-    url =  "http://0.0.0.0:8000/sender"
+    url =  "http://localhost:8000/sender"
 
     import requests
 
