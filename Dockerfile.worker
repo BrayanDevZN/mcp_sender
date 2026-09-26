@@ -1,0 +1,2 @@
+FROM brayandevzn/mcp_sender:base-v1 AS base 
+CMD ["python", "-m", "celery", "-A", "src.tasks.manage:celery_app", "worker", "--loglevel=INFO", "-c", "4"]

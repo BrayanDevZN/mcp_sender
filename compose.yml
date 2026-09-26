@@ -1,0 +1,104 @@
+
+x-configs: &app-env
+    env_file: .env
+  
+services:
+  
+  kafka:
+    image: brayandevzn/mcp_sender:kafka-v1
+    container_name: kafka
+    build:
+      context: .
+      dockerfile: Dockerfile.kafka
+
+    
+  base:
+    image: brayandevzn/mcp_sender:base-v1
+    <<: *app-env
+    
+  consumer:
+    <<: *app-env
+    container_name: consumer
+    build:
+      context: .
+      dockerfile: Dockerfile.consumer
+
+    image: brayandevzn/mcp_sender:consumer-v1
+    depends_on:
+    
+      
+      kafka:
+        condition: service_healthy
+
+      base:
+        condition: service_started
+
+      redis-worker:
+        condition: service_started
+
+  redis:
+    container_name: redis
+    image: redis:alpine
+    ports:
+      - 6379:6379
+
+  api:
+
+    image: brayandevzn/mcp_sender:api-v1
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+
+    container_name: api
+
+    ports:
+      - 8000:8000
+    <<: *app-env
+
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+      base:
+        condition: service_started
+      
+      redis:
+        condition: service_started
+
+      consumer:
+        condition: service_started
+
+      redis-worker:
+        condition: service_started
+
+  redis-worker:
+    container_name: redis-worker
+    image: redis:alpine
+
+  worker:
+    container_name: worker-sender
+    build:
+      context: .
+      dockerfile: Dockerfile.worker
+    image: brayandevzn/mcp_server:worker-v1
+    depends_on:
+      redis-worker:
+        condition: service_started
+      base:
+        condition: service_started
+      api:
+        condition: service_started
+    <<: *app-env
+    
+
+      
+
+      
+
+  
+
+  
+
+  
+
+  
