@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from src.app.api.midlleware import Midlleware
 from src.app.api.router import router
-from src.service import ENVIRONMENTS
+from service.service import ENVIRONMENTS
 class InstanceApi:
 
     def __init__(self):

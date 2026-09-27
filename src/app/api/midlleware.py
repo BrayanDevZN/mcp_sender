@@ -5,7 +5,7 @@ Midlleware que confere rate limit
 
 from starlette.middleware.base import BaseHTTPMiddleware
 from src.cache.manage import redis_control
-from src.service import ENVIRONMENTS
+from service.service import ENVIRONMENTS
 from fastapi import HTTPException, Request
 class Midlleware(BaseHTTPMiddleware):
 
