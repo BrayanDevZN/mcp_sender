@@ -7,9 +7,9 @@ junta os modulos e facilita importação
 from src.config import ENVIRONMENTS
 from src.sender import Sender
 from src.tasks.manage import celery_app
-
+from src.service.task_db import insert_dlq
 @celery_app.task
-def sender(email:str, subject:str, body:str) -> None:
+def sender(key:str, email:str, subject:str, body:str) -> None:
 
     countdown = 0
 
@@ -25,6 +25,11 @@ def sender(email:str, subject:str, body:str) -> None:
                 body=body
             )
 
+            insert_dlq.apply_async(
+                args=[key, True, "sucess"],
+                queue="dataabse"
+            )
+
             break 
 
         except Exception as e:
@@ -35,6 +40,10 @@ def sender(email:str, subject:str, body:str) -> None:
                 continue
 
             msg = f"Houve um erro ao tentar enviar email: {e}"
+            insert_dlq.apply_async(
+                args=[key, False, msg],
+                queue="dataabse"
+            )
             logger.error(e)
             raise Exception(msg)
 

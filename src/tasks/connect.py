@@ -21,6 +21,7 @@ def celery_connect() -> Celery:
                 backend="redis://redis-worker:6379/1"
             )
 
+           
             logger.info("Conexão Criada com sucesso")
 
             return celery

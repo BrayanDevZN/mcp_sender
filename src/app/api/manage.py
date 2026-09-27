@@ -4,12 +4,13 @@ cria a instancia da api
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from src.app.api.midlleware import Midlleware
-from src.app.api.router import router
-from service.service import ENVIRONMENTS
+from app.api.router.sender import sender_router
+from src.service.module import ENVIRONMENTS
 class InstanceApi:
 
     def __init__(self):
         self.app = FastAPI()
+        self.routes = [sender_router]
 
 
     #Cria o midlleware
@@ -31,7 +32,8 @@ class InstanceApi:
     #Adiciona rota
     def _router(self) -> None:
 
-        self.app.include_router(router)
+        for router in self.routes:
+            self.app.include_router(router=router)
 
 
     #Executa os metodos e retorna instancia

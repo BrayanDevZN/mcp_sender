@@ -6,10 +6,10 @@ from fastapi import APIRouter, HTTPException
 from src.app.api.schema import ValidSender
 from fastapi.responses import JSONResponse
 from src.app.server.producer import Producer
-router = APIRouter(prefix="/sender", tags=["sender"])
+sender_router = APIRouter(prefix="/sender", tags=["sender"])
 
 "rota de enviar emais"
-@router.post("/")
+@sender_router.post("/")
 async def sender(sender_user:ValidSender) -> JSONResponse:
 
     try:
